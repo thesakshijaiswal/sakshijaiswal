@@ -24,3 +24,20 @@
     z-index: 1;
     border-radius: 0 0 60% 60%/0 0 100% 100%;
 }
+
+.login-box{
+    z-index: 2;
+    filter: drop-shadow(0 0 30px rgba(0,0,0, 0.25));
+}
+
+.wrapper{
+    width: 761px;
+    height: 582px;
+    top: 117px;
+    left: 339px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(88% 0, 100% 12%, 100% 100%, 12% 100%, 0 88%, 0 0);
+}
