@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 *{
     margin: 0;
     padding: 0;
@@ -35,9 +37,68 @@
     height: 582px;
     top: 117px;
     left: 339px;
-    background: #fff;
+    background: #fff url("img/image.png") no-repeat;
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
     clip-path: polygon(88% 0, 100% 12%, 100% 100%, 12% 100%, 0 88%, 0 0);
+    background-size: 100% 100%;
+}
+
+.left-img{
+    width: 361px;
+    height: 582px;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 3;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px 50px;
+    font-family: "Roboto", sans-serif;
+}
+
+.container{
+    display: flex;
+}
+
+.left-img h1{
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: left;
+}
+
+.ordered-list{
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 20px;
+    text-align: left;
+    list-style-type: none;
+    counter-reset: item;
+    padding: 14px;
+}
+
+.ordered-list li{
+    display: flex;
+    align-items: flex-start;
+    counter-increment: item;
+    margin-bottom: 8px;
+}
+
+.ordered-list li::before{
+    content: counter(item) ".";
+    margin-right: 8px;
+    width: 10px;
+    text-align: right;
+}
+
+.right-form-box{
+    width: 400px;
+    height: 582px;
+    padding: 50px;
+    z-index: 3;
+    background-color: #fff;
+    
 }
