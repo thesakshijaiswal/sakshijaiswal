@@ -98,7 +98,12 @@
     width: 400px;
     height: 582px;
     padding: 50px;
-    z-index: 3;
+    z-index: 4;
     background-color: #fff;
-    
+    color: #000;
+    font-family: "Roboto", sans-serif;
+}
+
+#password{
+    -webkit-text-security: disc;
 }

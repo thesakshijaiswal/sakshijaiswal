@@ -19,10 +19,64 @@
                         <li>Laborum distinctio incidunt quae voluptas tempore dolorem</li>
                     </ol>
                 </div>
-                <div class="right-form-box">
+                <form class="right-form-box">
                     <h3>Create an account</h3>
-                    
-                </div>
+
+                    <!--Input email-->
+                    <div class="input-control">
+                        <label for="email">Enter your email</label>
+                        <input type="text" id="email" name="email">
+                        <div class="error"></div>
+                    </div>
+
+                    <!-- DOB Picker-->
+                    <div class="input-control">
+                        <label for="dob-picker">Date of Birth <span>(optional)</span></label>
+
+                        <div class="pick-date">
+                            <span>
+                                <label for="date">Date</label>
+                                <input type="number" id="number">
+                            </span>
+
+                            <span>
+                                <label for="month">Month</label>
+                                <select name="month" id="month">
+                                    <option value="month">Month</option>
+                                </select>
+                            </span>
+
+                            <span>
+                                <label for="year">Year</label>
+                                <select name="year" id="year">
+                                    <option value="month">Year</option>
+                                </select>
+                            </span>
+                        </div>
+                    </div>
+
+                    <!--Input password-->
+                    <div class="input-control">
+                        <label for="password">Choose a strong password</label>
+                        <input type="text" id="password" name="password">
+                        <div class="error"></div>
+                    </div>
+
+                    <!-- Input user type-->
+                    <div class="input-control">
+                        <label for="user-type">Are you an agency or individual?</label>
+                        <div class="user-type">
+                        <input type="radio" id="individual" name="individual">
+                        <label for="individual">Individual</label>
+
+                        <input type="radio" id="agency" name="agency">
+                        <label for="agency">Agency</label>
+                        </div>
+                    </div>
+
+                    <!-- submit button -->
+                    <button class="submit" type="submit">Submit</button>
+                </form>
             </div>
         </div>
     </div>
