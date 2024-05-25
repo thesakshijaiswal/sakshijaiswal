@@ -59,7 +59,7 @@ const validateInputs = () => {
 
     if(passwordValue === '') {
         setError(password, 'Password is required');
-    } else if (passwordValue.length < 8 ) {
+    } else if (!isNumeric) {
         setError(password, 'Password must have a numeric value')
     } else {
         setSuccess(password);
