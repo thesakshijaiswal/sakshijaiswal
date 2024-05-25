@@ -31,6 +31,11 @@ const isValidEmail = email => {
     return re.test(String(email).toLowerCase());
 }
 
+const isNumeric = date => {
+    const regexForNumeric = /^(0|[1-9][0-9]*)$/;
+    return regexForNumeric.test(Number(password));
+}
+
 const validateInputs = () => {
     const emailValue = email.value.trim();
     const dateValue = date.value.trim();
