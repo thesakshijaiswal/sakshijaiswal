@@ -37,15 +37,27 @@ const validateInputs = () => {
     const passwordValue = password.value.trim();
 
     if(emailValue === ''){
+        setError(email, 'Email is required');
+    }else if(!isValidEmail(emailValue)) {
         setError(email, 'Please add valid email address');
     }else{
         setSuccess(email);
     }
 
     if(dateValue === ''){
+        setError(date, 'Date is required');  
+    }else if(date>30) {
         setError(date, 'Please enter valid date');
     }else{
         setSuccess(date);
+    }
+
+    if(passwordValue === '') {
+        setError(password, 'Password is required');
+    } else if (passwordValue.length < 8 ) {
+        setError(password, 'Password must have a numeric value')
+    } else {
+        setSuccess(password);
     }
 
 };
