@@ -107,6 +107,7 @@
     justify-content: center;
     flex-direction: column;
     gap: 30px;
+    font-family: "Roboto", sans-serif;
 }
 .right-form-box h3{
     width: 196px;
@@ -119,6 +120,23 @@
     font-size: 16px;
     font-weight: 700;
     line-height: 18.75px;
+}
+.input-control input:focus{
+    outline: 0;
+}
+.input-control.success input{
+    border-color: #09c372;
+}
+.input-control.error input{
+    border-color: rgba(235, 87, 87, 1);
+}
+.input-control .error{
+    color: rgba(235, 87, 87, 1);
+    font-size: 13px;
+    height: 15px;
+    width: 180px;
+    font-weight: 500;
+    line-height: 15.23px;
 }
 .input-control input,select, .submit-button{
    width: 291px;
@@ -212,7 +230,6 @@
 .radio input[type="radio"]:checked ~ span:after{
     transform: translate(-50%, -50%) scale(1);
 }
-
 .submit-button{
     width: 188px;
     height: 44px;
