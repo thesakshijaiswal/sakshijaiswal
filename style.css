@@ -22,7 +22,7 @@
     height: 882.5px;
     top: -474px;
     left: -422px;
-    background: linear-gradient(#642EFF 55.55%,#4C0783 100%);
+    background: linear-gradient(180deg, #642EFF 53.54%, #4C0783 100%);
     z-index: 1;
     border-radius: 0 0 60% 60%/0 0 100% 100%;
 }
@@ -120,6 +120,7 @@
     font-size: 16px;
     font-weight: 700;
     line-height: 18.75px;
+    position: relative;
 }
 .input-control input:focus{
     outline: 0;
@@ -127,32 +128,43 @@
 .input-control.success input{
     border-color: #09c372;
 }
-.input-control.error input{
+.input-control.error-message input{
     border-color: rgba(235, 87, 87, 1);
 }
-.input-control .error{
+.input-control .error-message{
     color: rgba(235, 87, 87, 1);
     font-size: 13px;
     height: 15px;
-    width: 180px;
     font-weight: 500;
     line-height: 15.23px;
+    position: absolute;
 }
-.input-control input,select, .submit-button{
+.input-control input,select{
    width: 291px;
    height: 42px;
    border-radius: 4px;
    border: 2px solid rgba(189, 189, 189, 1); 
    margin-top: 4px;
+   padding: 10px;
 }
 .input-control #optional{
     font-size: 12px;
     line-height: 14.06px;
 }
 .pick-date{
+    margin-top: 10px;
     display: flex;
-    justify-content: space-between;
+    gap: 10px;
+    position: relative;
 }
+#date-error{
+    top: 65px;
+}
+.pick-date span {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}  
 .pick-date span label{
     font-size: 14px;
     font-weight: 400;
@@ -164,6 +176,19 @@
     font-size: 16px;
     font-weight: 400;
 }
+.pick-date #date {
+    width: 50px;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 8px;
+  }
+
+  .pick-date input[type="number"]::-webkit-outer-spin-button,
+  .pick-date input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
 .pick-date select{
     appearance: none;
     -webkit-appearance: none;
@@ -172,8 +197,10 @@
     background-repeat: no-repeat;
     background-position-x: 95%;
     background-position-y: 50%;
+    background-size: 30px;
     padding-left: 6px;
-
+    font-weight: 400;
+    font-size: 16px;  
 }
 .pick-date #month{
     width: 115px;
@@ -241,4 +268,7 @@
     font-size: 18px;
     font-weight: 500;
     line-height: 21.09px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
 }
