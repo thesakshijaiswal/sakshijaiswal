@@ -2,14 +2,16 @@
     .bg-blob{
         position: absolute;
         width: 812px;
-        height: 304px;
+        height: 260px;
         top: 1261px;
-        left: 698px;
+        bottom: 0;
+        left: -150px;
         z-index: 5;
         background: linear-gradient(180deg, #642EFF 53.54%, #4C0783 100%);
         transform: rotateX( 180deg );
         transform-origin: left top;
         margin: auto;
+        border-radius: 0 0 60% 60%/0 0 100% 100%;
     }
     .wrapper{
         width: 100%;
